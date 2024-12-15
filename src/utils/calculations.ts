@@ -1,4 +1,4 @@
-import { GestationalAge, CardiovascularMeasurement, ZScoreResult } from '../types/calculator';
+import { GestationalAge, ZScoreResult } from '../types/calculator';
 
 // Add Math.erf type declaration
 declare global {
