@@ -1,0 +1,38 @@
+{
+  "hash": "7c2de2ab",
+  "browserHash": "e0f8b43c",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "6e58669d",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "a0fdcf0b",
+      "needsInterop": true
+    },
+    "clsx": {
+      "src": "../../node_modules/clsx/dist/clsx.mjs",
+      "file": "clsx.js",
+      "fileHash": "51e51417",
+      "needsInterop": false
+    },
+    "tailwind-merge": {
+      "src": "../../node_modules/tailwind-merge/dist/tailwind-merge.mjs",
+      "file": "tailwind-merge.js",
+      "fileHash": "c9d0067e",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-GE3BAENF": {
+      "file": "chunk-GE3BAENF.js"
+    },
+    "chunk-6TJCVOLN": {
+      "file": "chunk-6TJCVOLN.js"
+    }
+  }
+}

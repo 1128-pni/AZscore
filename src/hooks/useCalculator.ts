@@ -224,34 +224,9 @@ export const useCalculator = (isDoppler: boolean = false) => {
     });
   };
 
-  const handleAddMeasurement = () => {
-    console.log('handleAddMeasurement called:', {
-      currentMeasurements: formData.measurements,
-      isDoppler,
-      type: isDoppler ? 'Doppler' : '2D'
-    });
-    
-    setFormData(prev => {
-      const newMeasurement = createEmptyMeasurement();
-      const newMeasurements = [...prev.measurements, newMeasurement];
-      
-      console.log('Adding new measurement:', {
-        type: isDoppler ? 'Doppler' : '2D',
-        newMeasurement,
-        totalMeasurements: newMeasurements.length
-      });
-      
-      return {
-        ...prev,
-        measurements: newMeasurements
-      };
-    });
-  };
-
   return {
     formData,
     handleGestationalAgeChange,
     handleMeasurementChange,
-    handleAddMeasurement
   };
 };

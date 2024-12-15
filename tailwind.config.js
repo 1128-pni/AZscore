@@ -7,28 +7,26 @@ export default {
   theme: {
     extend: {
       animation: {
-        'fadeIn': 'fadeIn 0.5s ease-in-out forwards',
-        'slideUp': 'slideUp 0.5s ease-out forwards',
+        'fadeIn': 'fadeIn 0.5s ease-in-out',
+        'slideUp': 'slideUp 0.5s ease-out',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
-          '100%': { opacity: '1' }
+          '100%': { opacity: '1' },
         },
         slideUp: {
           '0%': { 
             transform: 'translateY(1rem)',
-            opacity: '0'
+            opacity: '0',
           },
           '100%': { 
             transform: 'translateY(0)',
-            opacity: '1'
-          }
-        }
-      }
+            opacity: '1',
+          },
+        },
+      },
     },
   },
-  plugins: [
-    require('tailwindcss-animate')
-  ],
+  plugins: [],
 }

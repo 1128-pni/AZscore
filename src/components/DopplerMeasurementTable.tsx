@@ -6,13 +6,11 @@ import { dopplerFormulas } from '../data/formulas';
 interface Props {
   measurements: CardiovascularMeasurement[];
   onMeasurementChange: (index: number, measurement: CardiovascularMeasurement) => void;
-  onAddMeasurement: () => void;
 }
 
 export const DopplerMeasurementTable: React.FC<Props> = ({ 
   measurements, 
-  onMeasurementChange,
-  onAddMeasurement
+  onMeasurementChange
 }) => {
   return (
     <div className="space-y-6">

@@ -12,14 +12,12 @@ const App: FC = () => {
     formData: normalFormData,
     handleGestationalAgeChange: handleNormalGAChange,
     handleMeasurementChange: handleNormalMeasurementChange,
-    handleAddMeasurement: handleNormalAddMeasurement,
   } = useCalculator(false);
 
   const {
     formData: dopplerFormData,
     handleGestationalAgeChange: handleDopplerGAChange,
     handleMeasurementChange: handleDopplerMeasurementChange,
-    handleAddMeasurement: handleDopplerAddMeasurement,
   } = useCalculator(true);
 
   const handleGAChange = (newAge: GestationalAge) => {
@@ -55,7 +53,6 @@ const App: FC = () => {
             <MeasurementTable
               measurements={normalFormData.measurements}
               onMeasurementChange={handleNormalMeasurementChange}
-              onAddMeasurement={handleNormalAddMeasurement}
             />
           </section>
 
@@ -67,7 +64,6 @@ const App: FC = () => {
             <DopplerMeasurementTable
               measurements={dopplerFormData.measurements}
               onMeasurementChange={handleDopplerMeasurementChange}
-              onAddMeasurement={handleDopplerAddMeasurement}
             />
           </section>
         </div>
